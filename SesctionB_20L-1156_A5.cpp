@@ -690,7 +690,7 @@ void main(){
 
 		}
 		if(Choice == "S"){
-			//If user presses C
+			//If user presses S
 			int Rows = 0;
 			int Cols = 0;
 			int TestCases;
@@ -732,7 +732,7 @@ void main(){
 				std::cin>>FileName;
 				SubString = FileName.substr(FileName.length()-4,4);
 				Check = SubString.find(".txt");
-				if(Check == -1){
+				if(Check != -1){
 					ofstream outputfile(FileName);
 					SetConsoleTextAttribute(color, 1);
 					std::cout<<endl<<"**** Results! ****\n";
