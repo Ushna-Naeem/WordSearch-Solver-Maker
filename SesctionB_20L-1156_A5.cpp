@@ -563,8 +563,8 @@ void main(){
 		std::cout<<endl<<"      ~~ Kindly Select one of the following opitions ~~ ";
 		SetConsoleTextAttribute(color, 13);
 		std::cout<<endl<<endl<<"         << Press (C) to create a new word search >>";
-		std::cout<<endl<<"        << Press (S) to search in an existing game >>";
-		std::cout<<endl<<"              << Press (Q) to Quit the game >>"<<endl;
+		std::cout<<endl<<"                << Press (S) to search words>>";
+		std::cout<<endl<<"             << Press (Q) to quit the programme >>"<<endl;
 		SetConsoleTextAttribute(color, 6);
 		std::cout<<endl<<"                 Your Selection: ";
 		std::cin>>Choice;
@@ -653,7 +653,7 @@ void main(){
 						std::cout<<endl<<"~~ Enter the number of Cols: ";
 						SetConsoleTextAttribute(color, 6);
 						std::cin>>Cols;
-						if(Rows>MaxLen || Cols>>MaxLen){ //compareing rows/clol with max lenght
+						if(Rows>=MaxLen || Cols>=MaxLen){ //compareing rows/clol with max lenght
 							char** Matrix = MakeArray(Rows,Cols);	
 							srand((unsigned)time(0));
 							int Pattren;	//Stores randomised value that is used to generate sequence of word placement.
